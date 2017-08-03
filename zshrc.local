@@ -20,7 +20,9 @@ else
 fi
 
 ### Tmux ###
-# ZSH_TMUX_AUTOSTART=true
+if [[ -n $SSH_CONNECTION ]]; then
+  ZSH_TMUX_AUTOSTART=true
+fi
 
 ### Aliases ###
 # Fuck alias
